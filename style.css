@@ -1,0 +1,383 @@
+/*=============================================
+ RESET & BASE STYLES
+=============================================*/
+* {
+   box-sizing: border-box;   
+   margin: 0;                 
+   padding: 0;
+}
+
+/* Base page styles */
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;    
+   color: #333;                  
+   line-height: 1.6;             
+   margin: 20px;
+}
+
+h2 { 
+   font-size: 1.8rem; 
+   color: #005b99; 
+   text-align: center; 
+   margin-bottom: 15px;
+}
+
+/*=============================================
+ HEADER & NAVIGATION
+=============================================*/
+/* Main header */
+header { 
+   display: block;               
+   align-items: center;         
+   padding: 10px 20px;
+   background-color: #007acc;   
+   color: white;
+}
+
+.logo-container { 
+   display: flex;
+   align-items: center;
+}
+
+/* State logo sizing */
+.state-logo {
+   width: 70px;
+   height: auto;
+   margin-right: 15px;
+}
+
+/* Navigation styling */
+nav { 
+   background-color: #005b99;   
+   color: white;
+   padding: 10px 0;
+   text-align: center;
+}
+
+.nav-links a { 
+   color: white;
+   text-decoration: none;       
+   margin: 0 15px;              
+   font-weight: bold;
+}
+
+.nav-links a:hover {
+   text-decoration: underline;
+}
+
+.nav-links a.active {
+   color: #ffd700;    /* Gold color for active page */
+   font-weight: bold;
+}
+
+/*=============================================
+  MAIN CONTENT LAYOUT
+=============================================*/
+main { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;    
+  margin: 20px auto;   
+  align-items: flex-start;  
+  gap: 20px;
+}
+
+.content { 
+  flex: 2;
+  padding: 0;
+  margin: 0;            
+}
+
+.emphasized { 
+   font-weight: bold;       
+   color: #007acc;          
+   background-color: #f9f9f9; 
+   padding: 5px;            
+   border-radius: 5px;      
+}
+
+/*=============================================
+ FEATURED IMAGE & WELCOME SECTION
+=============================================*/
+/* Main featured image */
+.featured-image img { 
+   width: 100%;
+   height: 400px;          
+   object-fit: cover;      
+   border-radius: 8px;
+   margin-bottom: 20px;
+}
+
+/* Welcome section container */
+.welcome-box { 
+   background-color: #ffffff;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   margin: 0;
+   margin-bottom: 20px;
+}
+
+.park-count {
+    float: right;
+    background-color: #007acc;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+
+.quick-facts {
+  padding: 20px;      
+}
+
+/*=============================================
+ CITY CARDS SECTION
+=============================================*/
+/* City cards container */
+.city-previews { 
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   flex-wrap: wrap;  
+}
+
+/* Individual city card */
+.city-card { 
+   background-color: white;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   flex: 1;          
+   min-width: 250px; 
+   margin-bottom: 20px;
+   position: relative;
+}
+
+.featured-badge {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background-color: #007acc;
+   color: white;
+   padding: 5px 10px;
+   border-radius: 4px;
+   font-size: 0.8rem;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* City card images */
+.city-card img { 
+   width: 100%;
+   height: 200px;        /* Fixed height */
+   object-fit: cover;
+   border-radius: 8px 8px 0 0;
+}
+
+/* City card content */
+.city-card h3 {
+   font-size: 1.5rem;
+   padding: 10px;
+}
+
+.city-card p {
+   padding: 0 10px 10px;
+   font-size: 0.9rem;
+}
+
+/*=============================================
+ BUTTONS
+=============================================*/
+.btn { 
+   display: block;
+   background-color: #007acc;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   text-decoration: none;
+   font-weight: bold;
+   margin: 10px;
+   border-radius: 5px;
+}
+
+.btn:hover {
+   background-color: #005b99;
+}
+
+/*=============================================
+SIDEBAR (ASIDE)
+=============================================*/
+aside { 
+  flex: 1;
+  min-width: 300px;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  margin-top: 0;      
+}
+
+
+/* Quick facts section */
+.quick-facts ul { 
+   list-style: none;
+   padding: 0;
+}
+
+.quick-facts li {
+   padding: 5px 0;
+   font-size: 0.9rem;
+   background-color: #f9f9f9;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   padding: 8px;
+}
+
+/* City Statistics Section */
+.city-stats {
+   background-color: #fff; 
+   border: 1px solid #ddd; 
+   border-radius: 8px; 
+   padding: 20px; 
+   margin-top: 20px; 
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.city-stats h3 {
+   margin-bottom: 15px; 
+   }
+
+.city-stats ul {
+   list-style: none; 
+   padding: 0; 
+   margin: 0; 
+}
+
+.city-stats li {
+   padding: 12px; 
+   font-size: 0.9rem; 
+   background-color: #f9f9f9; 
+   margin-bottom: 10px; 
+   border-radius: 5px; 
+}
+
+
+/* Weather widget */
+.weather-widget { 
+   margin-top: 20px;
+   padding: 12px;
+   font-size: 0.9rem;
+}
+
+.weather-item {
+   display: flex;
+   justify-content: space-between;
+   padding: 12px;
+   background-color: #f9f9f9;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   font-size: 0.9rem;
+}
+
+.weather-item span:first-child {
+   font-weight: bold;
+}
+
+/*=============================================
+FORM STYLES
+=============================================*/
+.form-group {
+   margin-bottom: 20px;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   font-size: 1rem;
+}
+
+.form-group textarea {
+   min-height: 150px;
+   resize: vertical;
+}
+
+/*=============================================
+  TABLE STYLES
+=============================================*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+thead {
+  background-color: #007acc; 
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+
+/*=============================================
+ FOOTER
+=============================================*/
+footer { 
+   background-color: #00274d;
+   color: white;
+   padding: 20px 0;
+   text-align: center;
+   font-size: 0.9rem;
+   margin-top: 40px;
+}
+
+.footer-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+
+.footer-links a {
+   color: #b3d9ff;
+   text-decoration: none;
+   margin: 0 10px;
+   position: relative;
+   top: 2px;
+}
+
+.footer-links a:hover {
+   color: #80bfff;
+   text-decoration: underline;
+   top: 0;
+} 
+
+#main-footer {
+   background-color: #00274d;  
+   color: white;             
+   padding: 15px 0;         
+   border-top: 7px solid #005b99; 
+   font-size: 0.9rem;         
+}

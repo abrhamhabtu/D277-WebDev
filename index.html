@@ -1,0 +1,214 @@
+<!--=============================================
+   DOCUMENT SETUP
+=============================================-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Discover Colorado</title>
+   <link rel="stylesheet" href="style.css">    <!-- Links to external stylesheet -->
+</head>
+
+<body>
+   <!--=============================================
+       HEADER & NAVIGATION
+   =============================================-->
+   <!-- Main header with logo -->
+   <header>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Flag_of_Colorado.svg" 
+                alt="Colorado State Flag" 
+                class="state-logo">
+            <h1>Discover Colorado</h1>
+        </div>
+    </header>
+
+   <!-- Main navigation -->
+   <nav>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a> |
+            <a href="denver.html">Denver</a> |
+            <a href="boulder.html">Boulder</a> |
+            <a href="colorado-springs.html">Colorado Springs</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+   <!--=============================================
+       MAIN CONTENT AREA
+   =============================================-->
+   <main>
+       <!-- Primary content section -->
+       <section class="content">
+           <!-- Hero image section -->
+           <div class="featured-image">
+               <img src="images/denver-landscape.jpg" alt="Colorado Landscape">
+           </div>
+                    
+                    <!-- Welcome text section -->
+            <div class="welcome-box">
+                <div class="welcome-text">
+                    <h2>Welcome To The Centennial State</h2>
+                    <p>Colorado, nicknamed the Centennial State because it achieved statehood in 1876—a century after the United States was founded, is known for its stunning Rocky Mountains, vibrant cities, and outdoor adventures. From the Capital Denver to the scenic beauty of Boulder and Colorado Springs, there's always something to discover.</p>
+                </div>
+            </div>
+
+                    <!-- Attractions list section -->
+            <div class="welcome-box">
+                <h2>Top 3 Most Visited Attractions</h2>
+                <ol>
+                    <li>Rocky Mountain National Park (Over 5 million visitors annually)</li>
+                    <li class="emphasized">Garden of the Gods (Over 3.4 million visitors annually)</li>
+                    <li>Red Rocks Amphitheatre (Over 1.65 million visitors annually)</li>
+                </ol>
+            </div>
+
+                 <!-- Parks Info section -->
+            <div class="welcome-box">
+                <h2>State Parks</h2>
+                <p class="park-count">42 Parks!</p>
+                <p>Colorado features an incredible collection of state parks offering diverse landscapes and outdoor activities.</p>
+            </div>
+
+            <!--=============================================
+                        CITY COMPARISON TABLE
+            =============================================-->
+            <div class="welcome-box">
+                <h2>City Comparison</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Population</th>
+                            <th>Elevation</th>
+                            <th>Founded</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Denver</td>
+                            <td>716,234</td>
+                            <td>5,280 ft</td>
+                            <td>1861</td>
+                        </tr>
+                        <tr>
+                            <td>Boulder</td>
+                            <td>105,898</td>
+                            <td>5,328 ft</td>
+                            <td>1859</td>
+                        </tr>
+                        <tr>
+                            <td>Colorado Springs</td>
+                            <td>488,664</td>
+                            <td>6,035 ft</td>
+                            <td>1871</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+           <!--=============================================
+               CITY PREVIEW CARDS
+           =============================================-->
+           <div class="city-previews">
+               <!-- Denver card -->
+               <div class="city-card">
+                    <div class="featured-badge">Featured</div> 
+                   <img src="images/union-station-.jpg" alt="Union Station, Denver">
+                   <h3>Denver</h3>
+                   <p>Colorado's capital and largest city, where urban sophistication meets outdoor adventure. Known for its thriving arts scene, professional sports, and 300 days of sunshine.</p>
+                   <a href="denver.html" class="btn">Explore Denver</a>
+               </div>
+
+               <!-- Boulder card -->
+               <div class="city-card">
+                   <img src="images/rockies.jpg" alt="Rocky Mountains, Boulder">
+                   <h3>Boulder</h3>
+                   <p>A scenic city at the foothills of the Rocky Mountains, known for its outdoor activities and progressive culture. Combining outdoor recreation with a thriving tech and startup scene.</p>
+                   <a href="boulder.html" class="btn">Explore Boulder</a>
+               </div>
+
+               <!-- Colorado Springs card -->
+               <div class="city-card">
+                   <img src="images/garden-of-the-gods.jpg" alt="Garden of the Gods, Colorado Springs">
+                   <h3>Colorado Springs</h3>
+                   <p>Famous for Garden of the Gods and Pikes Peak, Colorado Springs combines natural beauty with historic charm, making it a must-visit destination.</p>
+                   <a href="colorado-springs.html" class="btn">Explore Colorado Springs</a>
+               </div>
+           </div>
+       </section>
+
+       <!--=============================================
+           SIDEBAR WIDGETS
+       =============================================-->
+            <aside>
+                <!-- Quick facts widget -->
+                <div class="quick-facts">
+                    <h3>Quick Facts</h3>
+                    <ul>
+                        <li>Capital: Denver</li>
+                        <li>Population: 5.8 million</li>
+                        <li>Largest City: Denver</li>
+                        <li>State Bird: Lark Bunting</li>
+                        <li>State Flower: Rocky Mountain Columbine</li>
+                        <li>Nickname: The Centennial State</li>
+                        <li>Highest Peak: Mount Elbert (14,433 ft)</li>
+                        <li>Statehood: August 1, 1876</li>
+                        <li>Elevation: Mile High City (5,280 ft)</li>
+                        <li>Climate: 300+ Days of Sunshine</li>
+                    </ul>
+                </div>
+            
+                <!-- Weather widget -->
+                <div class="weather-widget">
+                    <h3>Weather</h3>
+                    <div id="weather-data">
+            
+                        <!-- Weather items for each city -->
+                        <div class="weather-item">
+                            <span>Denver:</span>
+                            <span>45°F Cloudy</span>
+                        </div>
+            
+                        <div class="weather-item">
+                            <span>Boulder:</span>
+                            <span>50°F Sunny</span>
+                        </div>
+            
+                        <div class="weather-item">
+                            <span>Colorado Springs:</span>
+                            <span>29°F Snowy</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Top Attractions widget -->
+                <div class="quick-facts">
+                    <h3>Top Attractions</h3>
+                    <ul>
+                        <li><a href="boulder.html" target="_self">Rocky Mountain National Park</a></li>
+                        <li><a href="colorado-springs.html" target="_self">Garden of the Gods</a></li>
+                        <li><a href="denver.html" target="_self">Red Rocks Amphitheatre</a></li>
+                        <li><a href="colorado-springs.html" target="_self">Pikes Peak</a></li>
+                        <li><a href="denver.html" target="_self">Great Sand Dunes National Park</a></li>
+                        <li><a href="boulder.html" target="_self">Maroon Bells</a></li>
+                    </ul>
+                </div>
+            </aside>
+   </main>
+
+
+   <!--=============================================
+       FOOTER SECTION
+   =============================================-->
+   <footer id="main-footer"> 
+        <div class="footer-container">
+            <p>&copy; 2024 Discover Colorado. All rights reserved.</p> <!-- Footer copyright text -->
+            <div class="footer-links">
+                <a href="https://www.colorado.com" target="_blank">Visit Colorado</a> |            <!-- External link -->
+                <a href="https://co.colorado.gov/" target="_blank">Learn More About Colorado</a>  <!-- External link -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!--=============================================
+    DOCUMENT SETUP
+=============================================-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Discover Colorado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--=============================================
+        HEADER & NAVIGATION
+    =============================================-->
+    <header>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Flag_of_Colorado.svg" 
+                 alt="Colorado State Flag" 
+                 class="state-logo">
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a> |
+            <a href="denver.html">Denver</a> |
+            <a href="boulder.html">Boulder</a> |
+            <a href="colorado-springs.html">Colorado Springs</a> |
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <!--=============================================
+        MAIN CONTENT AREA
+    =============================================-->
+    <main>
+        <section class="content">
+            <div class="welcome-box">
+                <h2>Get in Touch</h2>
+                <p>Have questions about Colorado? We're here to help! Fill out the form below and we'll get back to you.</p>
+                
+                <!-- Contact Form -->
+                <form id="contactForm">
+                    <!-- Name Fields -->
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+
+                    <!-- Email Fields -->
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmEmail">Confirm Email Address:</label>
+                        <input type="email" id="confirmEmail" name="confirmEmail" required>
+                    </div>
+
+                    <!-- Question Field -->
+                    <div class="form-group">
+                        <label for="question">Your Question:</label>
+                        <textarea id="question" name="question" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!--=============================================
+            SIDEBAR CONTENT
+        =============================================-->
+        <aside>
+            <div class="quick-facts">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>Phone: (123) 123-4567</li>
+                    <li>Hours: Mon-Fri, 9am-6pm MT</li>
+                    <li>Location: Denver, CO</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!--=============================================
+        FOOTER SECTION
+    =============================================-->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Discover Colorado. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.colorado.com" target="_blank">Visit Colorado</a> |
+                <a href="https://co.colorado.gov/" target="_blank">Learn More About Colorado</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Link to external JavaScript -->
+    <script src="formval.js"></script>
+</body>
+</html>
